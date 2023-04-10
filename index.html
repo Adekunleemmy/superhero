@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang=en>
+<head>
+<meta charset=UTF-8>
+<meta http-equiv=X-UA-Compatible content="IE=Edge">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>Adeks Superhero Website</title>
+<link rel=preconnect href=https://fonts.googleapis.com>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@400;500;600;700;800&family=Gabriela&family=League+Gothic&family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Roboto:wght@400;500;700&display=swap" rel=stylesheet>
+<link rel=stylesheet href=style.css>
+<script src=https://kit.fontawesome.com/1e87a7be95.js crossorigin=anonymous></script>
+</head>
+<body>
+<div class=preloader>
+<div class=loader></div>
+</div>
+<div id=main-content class=hidden>
+<nav id=nav>
+<h1><a href=#nav>Adeks</a></h1>
+<div class=dropDown>
+<img class=closeBtn src=icons/closeBtn.png alt="">
+<ul class=list>
+<li class=list1><a id=rand href=#result>New superhero</a></li>
+<li class=searchList><a href=#randSearch>Search superhero</a></li>
+</ul>
+<div class=hide>
+<form id=myForm>
+<input placeholder="favourite superhero name" list=name-options1 required>
+<button>Search</button>
+</form>
+<datalist id=name-options1>
+</datalist>
+</div>
+<div class=instruct>Search or click the random superhero button to get data based on Powerstats, Biography, Appearance, Images.</div>
+<div class=foot>&copy; Adekunle Emmanuel</div>
+</div>
+<img class=openBtn src=icons/bar.png>
+</nav>
+<div class=hero>
+<div>
+<h2>Adeks's<br>Superhero App</h2>
+<p>Search and get random superhero results</p>
+</div>
+<a href=#result><button id=rand>New Superhero</button></a>
+<a href=#workDiv><img class=downArrow src=icons/bottom.png alt=""></a>
+</div>
+<section id=workDiv>
+<div class=toDo>
+Search or click the New superhero button to get data based on Powerstats, Biography, Appearance, Images.
+</div>
+<div class=workDiv id=randSearch>
+<a id=rand href=#result>New superhero</a>
+<form class=searchRtn>
+<input onkeypress=searchHint2() placeholder="favourite superhero name" list=name-options2 required>
+<datalist id=name-options2>
+</datalist>
+<button id=rand>Search</button>
+</form>
+</div>
+<div id=result class=displayDiv>
+<div class=first>
+<div id=image class=imageDiv></div>
+<h3 id=superName>--------</h3>
+</div>
+<div class=second>
+<div class=twoDiv>
+<div id=biography class="ce2 same">
+<h4>Biography</h4>
+</div>
+<div id=appearance class="u ce2 same">
+<h4>Apperance</h4>
+</div>
+</div>
+<div id=powerstats class="ce same">
+<h4>Powerstats</h4>
+</div>
+</div>
+</div>
+</section>
+<div class=footer>
+<div class="one diff">
+<h4>Contact Us</h4>
+<div>
+<div class=space><i class="fa-solid fa-phone"></i><a href=tel:+2349133912973>+2349133912973</a></div>
+<div class=space><i class="fa-solid fa-envelope"></i><a href=mailto:ayomide04emma@gmail.com>ayomide04emma@gmail.com</a>
+</div>
+<div class=space><i class="fa-solid fa-location-dot"></i><a href="geo:6.544764,3.364081?q=24+Ilupeju+Rd,+Onipanu+102215,+Lagos">24 Ilupeju Rd, Onipanu 102215, Lagos</a></div>
+</div>
+</div>
+<div class="one diff">
+<h4>Menu</h4>
+<div>
+<a href=#nav>Home</a>
+<a id=rand href=#result>Random Superhero</a>
+<a href=#randSearch>Search superhero</a>
+</div>
+</div>
+<div class=one>
+<h4>Search hint</h4>
+<div class=suggest>
+<div>
+<p><a id=sh href=#result>Ethan Hunt</a></p>
+<p><a id=sh href=#result>Spider-Man</a></p>
+<p><a id=sh href=#result>Alien</a></p>
+<p><a id=sh href=#result>Gladiator</a></p>
+</div>
+<div class=moveDiv>
+<p><a id=sh href=#result>Evil Deadpool</a></p>
+<p><a id=sh href=#result>Ant-Man</a></p>
+<p><a id=sh href=#result>Power Girl</a></p>
+<p><a id=sh href=#result>Ghost Rider</a></p>
+</div>
+</div>
+</div>
+</div>
+<footer>
+<p>Adekunle Emmanuel &copy; 2023</p>
+<a href=#nav><img id=yo src="icons/Up btn.png" alt=""></a>
+</footer>
+</div>
+<script src=array.js></script>
+<script src=main.js></script>
+</body>
+</html>
