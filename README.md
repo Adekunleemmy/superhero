@@ -1,1 +1,1 @@
-# superhero
+I Adekunle Emmanuel Ayomide created this project all by myself with pure html, css and javascript. The coding experience was exhiliratimg, trust me. If you need the uncompressed code, kindly DM me on whatsapp 09133912973
