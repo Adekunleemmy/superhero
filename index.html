@@ -17,17 +17,17 @@
 </div>
 <div id=main-content class=hidden>
 <nav id=nav>
-<h1><a href=#nav>Adeks</a></h1>
+  <h1><a href=#nav>Adeks</a></h1>
 <div class=dropDown>
 <img class=closeBtn src=icons/closeBtn.png alt="">
 <ul class=list>
-<li class=list1><a id=rand href=https://adekunleemmy.github.io/superhero/#result>New superhero</a></li>
+<li class=list1><a id=rand href="#result">New superhero</a></li>
 <li class=searchList><a href=#randSearch>Search superhero</a></li>
 </ul>
 <div class=hide>
 <form id=myForm>
 <input placeholder="favourite superhero name" list=name-options1 required>
-<button type="submit" formaction="https://adekunleemmy.github.io/superhero/#result">Search</button>
+<button type="submit" formaction="#result">Search</button>
 </form>
 <datalist id=name-options1>
 </datalist>
@@ -50,12 +50,12 @@
 Search or click the New superhero button to get data based on Powerstats, Biography, Appearance, Images.
 </div>
 <div class=workDiv id=randSearch>
-<a id=rand href=#result>New superhero</a>
+<a id=rand href="#result">New superhero</a>
 <form class=searchRtn>
 <input onkeypress=searchHint2() placeholder="favourite superhero name" list=name-options2 required>
 <datalist id=name-options2>
 </datalist>
-<button type="submit" formaction="/#result">Search</button>
+<button type="submit" formaction="#result">Search</button>
 </form>
 </div>
 <div id=result class=displayDiv>
